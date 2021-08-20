@@ -15,6 +15,10 @@ make html
 
 This generates a preview in the output/ directory.
 
+# Writing content
+
+See [the pelican manual on writing content](https://docs.getpelican.com/en/stable/content.html).
+
 # Deploying
 
 ```

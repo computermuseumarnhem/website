@@ -5,7 +5,7 @@ Slug: 20150214-DND-boeken-exodus
 Authors: Bix
 Summary: 
 
-Een belangrijke reden om de verzameling van DND naar Arnhem te halen was de grote hoeveelheid documentatie en andere media. Nadat we de boeken voor een groot deel uitgesorteerd hadden, heb ik afgelopen maanden een begin gemaakt met het catalogiseren van alle boeken.
+Een belangrijke reden om [de verzameling van DND naar Arnhem te halen]({filename}/20140820_dnd_exodus.html) was de grote hoeveelheid documentatie en andere media. Nadat we de boeken voor een groot deel uitgesorteerd hadden, heb ik afgelopen maanden een begin gemaakt met het catalogiseren van alle boeken.
 
 <img src="https://farm9.staticflickr.com/8614/15773087497_3426d01d06_n.jpg" alt="DND Boeken Exodus" width="320" height="178">
 
