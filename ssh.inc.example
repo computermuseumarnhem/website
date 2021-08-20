@@ -1,0 +1,5 @@
+SSH_HOST=fqdn
+SSH_PORT=22
+SSH_USER=user
+SSH_TARGET_DIR=/path/to/www/root
+
