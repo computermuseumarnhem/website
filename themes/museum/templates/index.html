@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+{% block content_title %}
+<h2>All articles</h2>
+{% endblock %}
+
+{% for article in articles_page.object_list %}
+            <aside id="article" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                    <div class="entry-meta">Gepubliceerd op {{ article.locale_date }}
+                        door {% for author in article.authors %}
+                             <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                        {% endfor %}</div>
+                    {{ article.content }}
+                </article>
+            </aside><!-- /#featured -->
+{% endfor %}
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+</section><!-- /#content -->
+{% endblock content %}

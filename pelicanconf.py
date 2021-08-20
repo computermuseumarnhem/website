@@ -7,9 +7,11 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Amsterdam'
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = 'nl'
+
+LOCALE = 'en_GB.utf8'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -30,5 +32,16 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
+DISPLAY_PAGES_ON_MENU = True
+
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
+
+THEME = 'themes/museum'
+
+MENUITEMS = [
+    ('hack42.nl', 'https://hack42.nl/'),
+]
+
+INDEX_SAVE_AS = 'blog_index.html'
+

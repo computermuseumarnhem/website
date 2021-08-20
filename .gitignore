@@ -131,3 +131,6 @@ dmypy.json
 # Local ssh config
 ssh.inc
 
+# generated content
+output/*
+

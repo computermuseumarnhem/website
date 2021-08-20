@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
+        <title>Computermuseum Hack42 - Categories</title>
         <meta charset="utf-8" />
         <meta name="generator" content="Pelican" />
-        <title>Computermuseum Hack42 - Categories</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="./theme/js/umbrella.min.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("DOMContentLoaded", function() {
+                header_id = window.localStorage.getItem('header_id');
+        if(header_id) {
+            if(u('#header' + header_id).length) {
+                        u("header img").removeClass('header_active');
+                u("#header" + header_id).addClass('header_active');
+                    } else {
+                        window.localStorage.removeItem('header_id');
+            window.localStorage.setItem('header_id', 1);
+                    }
+                }
+        setInterval(function() {
+                  u('header img').removeClass('notransition');
+          header_id = parseInt(window.localStorage.getItem('header_id'));
+          if(header_id && u("#header" + (header_id+1)).length) {
+                      header_id += 1;
+                  } else {
+                      header_id = 1;
+                  }
+                  u("header img").removeClass('header_active');
+          u("#header" + header_id).addClass('header_active');
+                  window.localStorage.setItem('header_id', header_id);
+                }, 120000);
+        });
+        </script>
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">Computermuseum Hack42</a></h1>
-                <nav><ul>
-                </ul></nav>
+                <h1 id="site-title"><a href="./">Computermuseum Hack42</a></h1>
+                <div id="site-description">Zestig jaar computergeschiedenis in Arnhem</div>
+                <div id="header-image">
+                <img id="header1" class="header_active notransition" src="./theme/images/cropped-MG_6148.jpg"/>
+                <img id="header2" class="notransition" src="./theme/images/cropped-MG_7228.jpg"/>
+                </div>
         </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="./">Welkom</a></li>
+            <li><a href="./category/nieuws.html">Nieuws</a></li>
+            <li><a href="https://hack42.nl/">hack42.nl</a></li>
+        </ul></nav><!-- /#menu -->
+        <section id="content">
     <h1>Categories on Computermuseum Hack42</h1>
     <ul>
+        <li><a href="./category/nieuws.html">Nieuws</a> (5)</li>
     </ul>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
+        </section>
         <footer id="contentinfo" class="body">
+                <div id="site-info">
+                    <a href="./">Computermuseum Hack42</a>
+                </div>
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
-
 </body>
 </html>
