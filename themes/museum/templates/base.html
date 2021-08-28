@@ -54,7 +54,7 @@
                   u("header img").removeClass('header_active');
           u("#header" + header_id).addClass('header_active');
                   window.localStorage.setItem('header_id', header_id);
-                }, 120000);
+                }, 60000);
         });
         </script>
         {% endblock head %}
@@ -65,8 +65,10 @@
                 <h1 id="site-title"><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
                 <div id="site-description">Zestig jaar computergeschiedenis in Arnhem</div>
                 <div id="header-image">
-                <img id="header1" class="header_active notransition" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/cropped-MG_6148.jpg"/>
-                <img id="header2" class="notransition" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/cropped-MG_7228.jpg"/>
+                <img id="header1" class="header_active notransition" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/cropped-MG_7228.jpg"/>
+                <img id="header2" class="notransition" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/cropped-MG_6148.jpg"/>
+                <img id="header3" class="notransition" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/cropped-MG_7227.jpg"/>
+                <img id="header4" class="notransition" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/cropped-MG_7230.jpg"/>
                 </div>
         </header><!-- /#banner -->
         <nav id="menu"><ul>
